@@ -8,6 +8,10 @@ const path = require('path')
 const app = express()
 app.use(cors())
 
+app.get("/", (req, res) => {
+  return res.json({message: "AIT WS Server for Shoppe Livestream"})
+})
+
 const server = http.createServer(app)
 const io = new Server(server, {
   cors: {
@@ -16,7 +20,6 @@ const io = new Server(server, {
   }
 })
 
-// 📌 Hàm ghi log vào file
 const logToFile = (message) => {
   const logFile = path.join(__dirname, 'server.log')
   const timestamp = new Date().toISOString()
@@ -41,7 +44,7 @@ io.on('connection', (socket) => {
   socket.on('message', ({ room, message }) => {
     const msgLog = `📩 [Room ${room}] ${socket.id}: ${JSON.stringify(message)}`
     logToFile(msgLog)
-    io.to(room).emit('message', message)
+    socket.to(room).emit('message', message)
   })
 
   socket.on('disconnect', () => {

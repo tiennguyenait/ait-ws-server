@@ -1,1 +1,9 @@
-[2025-03-14T10:07:43.487Z] 📩 [Room 123456] PPCEFJaGeY4oc2BBAAAB: {"content":"Bai viet ve nguoi mau","id":"1"}
+[2025-03-14T10:54:41.838Z] 📩 [Room 123456] XYpybXQ2Dnymil4aAAAJ: {"content":"Message from phone"}
+[2025-03-14T10:54:41.967Z] 📩 [Room 123456] jvPBdPBn04sKN2qrAAAN: "Message from laptop"
+[2025-03-14T10:55:05.676Z] 📩 [Room 123456] XYpybXQ2Dnymil4aAAAJ: {"content":"Message from phone"}
+[2025-03-14T10:55:05.806Z] 📩 [Room 123456] jvPBdPBn04sKN2qrAAAN: "Message from laptop"
+[2025-03-14T10:55:19.899Z] 📢 jvPBdPBn04sKN2qrAAAN joined room: "123456"
+[2025-03-14T10:55:20.032Z] 📩 [Room 123456] jvPBdPBn04sKN2qrAAAN: "Message from PC"
+[2025-03-14T10:59:57.485Z] ❌ A device disconnected: jvPBdPBn04sKN2qrAAAN
+[2025-03-14T11:07:20.966Z] 🚀 Server started on port 7777
+[2025-03-14T11:07:22.323Z] 📲 A device connected: HRem-cbPoKf6VUz2AAAB
