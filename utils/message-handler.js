@@ -11,9 +11,10 @@ const handleMessage = (ws, message) => {
   }
 
   if (data.type === 'phone') {
+    console.log(data)
     const room_id = createRoom(data, ws)
     console.log(`📱 Phone connected to room: ${room_id}`)
-    ws.send(JSON.stringify({ room_id }))
+    ws.send(JSON.stringify({ cc: 'cc' }))
   } else if (data.type === 'pc') {
     const room_id = data.room_id
     if (joinRoom(ws, room_id)) {
